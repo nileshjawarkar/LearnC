@@ -141,14 +141,14 @@ We use these along with all the basic data types for categorising them further.
 - long
     - large variant of type
 - unsigned
-    - It mean only positive values.
-- signed (default)
-    - It mean (+,-) values. 
-    - If we dont specify unsigned, datatype will signed and support both + and - values.
+    - It means, data type is only for positive values. 
+- signed 
+    - It means (+,-) data-type support positive and negative values.
+    - Its a default modifier and dodnt not need to be specified.
 
 Note that signed and unsigned modifiers will not affect size of variable but it affected the range 
-of values it stores. Basically unsigned variant of type will shore large rage of positive values.
-Let apply these to int and check their sizes
+of values it stores. Basically unsigned variant of type will store large rage of positive values.
+Let try and apply these modifiers to int and check their sizes
 
 ``` variables_ex5.c
 #include <stdio.h>
