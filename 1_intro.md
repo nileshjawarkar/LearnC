@@ -1,4 +1,4 @@
-# Learn C language : Intriduction
+# Learn C language : Introduction
 
 ## Hello world
 
