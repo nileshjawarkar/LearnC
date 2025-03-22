@@ -102,8 +102,8 @@ num = 35:
 
 ## Constant
 
-Constant is similar to variable, but as name suggest it is constant 
-and it value will not be changed.
+Constant is similar to variable, but as name suggest its a constant 
+and it value can not be changed.
 
 ``` varibales_ex3.c
 #include <stdio.h>
