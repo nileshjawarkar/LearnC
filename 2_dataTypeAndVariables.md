@@ -10,8 +10,9 @@ int main()
     int age = 24;
     float pi = 3.14;
     char ch = 'A';
+    double price = 255.11;
 
-    printf("Age = %d, pi = %f, ch = %c\n", age, pi, ch);
+    printf("Age = %d, pi = %f, ch = %c, price = %lf\n", age, pi, ch, price);
 }
 ```
 
@@ -20,15 +21,21 @@ manipulate some type of that data and variable is used to hold it. So we can thi
 as a some type of container which hold the data. And data-type (in this case int) tells which 
 type of data it holds.
 
-In previous section, we seen int, float, char in the list of keywords. These are data-types.
+In previous section, we seen int, float, char, double in the list of keywords. 
+These are the basic data-types supported by C.
+
 - int : Integer - used for numbers
-- float : used of numbers with floating point.
 - char : used character data.
+- float : used of numbers with floating point.
+- double :Bigger floating point numbers
+
+In addition to above, one which is very commonly used is void which indicate nothing/not-known.
 
 ``` c 
 int age = 24;
-float pi = 3.14;
 char ch = 'A';
+float pi = 3.14;
+double price = 255.11;
 ```
 
 We can read above lines as 
@@ -107,8 +114,7 @@ int main()
     pi = pi + 1.0; // This is not allowed. compiler will show error.
 }
 ```
-
-## Size of datatype
+## sizeof operator
 
 ``` variables_ex4.c
 #include <stdio.h>
@@ -118,7 +124,60 @@ int main()
     int age = 24;
     float pi = 3.14;
     char ch = 'A';
-
-    printf("int size = %d, float size = %d, ch size = %d\n", sizeof(age), sizeof(pi), sizeof(ch));
+    printf("int size = %lu, float size = %lu, ch size = %lu\n", sizeof(age), sizeof(pi), sizeof(ch));
 }
 ```
+
+Just note the formate specifier used. This is because sizeof return (unsigned long int) type data and
+formate specifier of it is "%lu"
+We will discuss this in next section.
+
+## Data type modifiers
+There are basically four types of modifiers for all data types used in C language. 
+We use these along with all the basic data types for categorising them further.
+
+- short
+    - small varient of type
+- long
+    - large varient of type
+- unsigned
+    - It mean only positive values.
+- signed (default)
+    - It mean (+,-) values. 
+    - If we dont specify unsigned, datatype will signed and support both + and - values.
+
+Note that signed and unsigned modifiers wil not affect size of variable but it affected the range 
+of values it stores. Basically unsigned varient of type will shore large rage of positive values.
+Let apply these to int and check their sizes
+
+``` c
+int main()
+{
+    //-- As signed it default. We should read it as signed int i1 = 10;
+    int i1 = -10; 
+    short int i2 = 10;
+    long int i3 = 20; 
+    //-- long int is same as long. So we can simple used long as a shot form.
+    //-- So i3 and i4 are same
+    long i4 = 20; 
+    unsigned int i5 = 10; 
+    unsigned long int i6 = 10; 
+}
+```
+# Range of Values of C Data Type
+
+|Data Type|Format Specifier|Range|Typical Bit Size|
+|---|---|-----|---|
+| unsigned char | %c | 0 to 255 | 8 |
+|char|%c|-127 to 127|8|
+| int|%d, %i|-32,767 to 32,767|16 or 32|
+| unsigned int|%u| 0 to 65,535|16 or 32|
+|short int|%hd|-32,767 to 32,767|16|
+|unsigned short int|%hu|0 to 65,535|16|
+|signed short int|%hd|Same as short int|16|
+|long int|%ld, %li|-2,147,483,647 to 2,147,483,647|32|
+|unsigned long int|%lu|0 to 4,294,967,295|32|
+|float|%f|1E-37 to 1E+37 along with six digits of the precisions here|32|
+|double|%lf|1E-37 to 1E+37 along with six digits of the precisions here|64|
+|long double|%Lf|1E-37 to 1E+37 along with six digits of the precisions here|80|
+
