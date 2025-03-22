@@ -1,8 +1,8 @@
 # Learn C language : data type and variables
 
-## Example
+## Lets discuss about variables using following example
 
-``` c  
+``` variables_ex1.c
 #include <stdio.h>
 
 int main()
@@ -36,6 +36,7 @@ We can read above lines as
 - pi is a variable which hold data of floating type and it holds value 3.14.
 - ch is a variable which hold character data and it hold character value 'A'.
 
+## Format specifier
 ``` c 
 printf("Age = %d, pi = %f, ch = %c\n", age, pi, ch);
 ```
@@ -62,3 +63,62 @@ The table below lists some common escape sequences in C language -
 - \a	Alarm or BeepI - It is used to generate a bell sound in the C program.
 
 Outoff above list "\n" and "\t" are commonly used.
+
+## Variable modification
+
+``` varibales_ex2.c
+#include <stdio.h>
+
+int main()
+{
+    int num = 24;
+    printf("Before modification - num = %d\n", num);
+    num = num + 11;
+    printf("After modification - num = %d\n", num);
+}
+```
+
+Above program initialize num to 24
+```
+int num = 24;
+```
+then it is increamented by 11. Here increament mean increasing the existing value of variable by 11.
+
+```
+num = num + 11;
+
+# Here num already has value of 24, so above expresion become as follows -
+num = 24 + 11;
+num = 35:
+# Now num has value of 35
+```
+
+## Constant
+
+Constant is similar to varibale, but as name suggest it is constant 
+and it value will not be changed.
+
+``` varibales_ex3.c
+#include <stdio.h>
+
+int main()
+{
+    const float pi = 3.14;
+    pi = pi + 1.0; // This is not allowed. compiler will show error.
+}
+```
+
+## Size of datatype
+
+``` variables_ex4.c
+#include <stdio.h>
+
+int main()
+{
+    int age = 24;
+    float pi = 3.14;
+    char ch = 'A';
+
+    printf("int size = %d, float size = %d, ch size = %d\n", sizeof(age), sizeof(pi), sizeof(ch));
+}
+```
