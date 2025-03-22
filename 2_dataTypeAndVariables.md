@@ -103,7 +103,7 @@ num = 35:
 ## Constant
 
 Constant is similar to variable, but as name suggest its a constant 
-and it value can not be changed.
+and its value can not be changed.
 
 ``` varibales_ex3.c
 #include <stdio.h>
@@ -127,10 +127,9 @@ int main()
     printf("int size = %lu, float size = %lu, ch size = %lu\n", sizeof(age), sizeof(pi), sizeof(ch));
 }
 ```
+Just note the format specifier used. This is because sizeof returns (unsigned long int) type data and
+format specifier of it is "%lu". We will discuss this in next section.
 
-Just note the format specifier used. This is because sizeof return (unsigned long int) type data and
-format specifier of it is "%lu"
-We will discuss this in next section.
 
 ## Data type modifiers
 There are basically four types of modifiers for all data types used in C language. 
@@ -144,7 +143,7 @@ We use these along with all the basic data types for categorising them further.
     - It means, data type is only for positive values. 
 - signed 
     - It means (+,-) data-type support positive and negative values.
-    - Its a default modifier and dodnt not need to be specified.
+    - Its a default modifier and do not need to be specified explicitly.
 
 Note that signed and unsigned modifiers will not affect size of variable but it affected the range 
 of values it stores. Basically unsigned variant of type will store large rage of positive values.
