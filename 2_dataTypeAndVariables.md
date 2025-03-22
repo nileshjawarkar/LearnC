@@ -89,12 +89,12 @@ Above program initialize num to 24
 ```
 int num = 24;
 ```
-then it is increamented by 11. Here increament mean increasing the existing value of variable by 11.
+then it is incremented by 11. Here increment mean increasing the existing value of variable by 11.
 
 ```
 num = num + 11;
 
-# Here num already has value of 24, so above expresion become as follows -
+# Here num already has value of 24, so above expression become as follows -
 num = 24 + 11;
 num = 35:
 # Now num has value of 35
@@ -102,7 +102,7 @@ num = 35:
 
 ## Constant
 
-Constant is similar to varibale, but as name suggest it is constant 
+Constant is similar to variable, but as name suggest it is constant 
 and it value will not be changed.
 
 ``` varibales_ex3.c
@@ -128,8 +128,8 @@ int main()
 }
 ```
 
-Just note the formate specifier used. This is because sizeof return (unsigned long int) type data and
-formate specifier of it is "%lu"
+Just note the format specifier used. This is because sizeof return (unsigned long int) type data and
+format specifier of it is "%lu"
 We will discuss this in next section.
 
 ## Data type modifiers
@@ -137,20 +137,20 @@ There are basically four types of modifiers for all data types used in C languag
 We use these along with all the basic data types for categorising them further.
 
 - short
-    - small varient of type
+    - small variant of type
 - long
-    - large varient of type
+    - large variant of type
 - unsigned
     - It mean only positive values.
 - signed (default)
     - It mean (+,-) values. 
     - If we dont specify unsigned, datatype will signed and support both + and - values.
 
-Note that signed and unsigned modifiers wil not affect size of variable but it affected the range 
-of values it stores. Basically unsigned varient of type will shore large rage of positive values.
+Note that signed and unsigned modifiers will not affect size of variable but it affected the range 
+of values it stores. Basically unsigned variant of type will shore large rage of positive values.
 Let apply these to int and check their sizes
 
-``` c
+``` variables_ex5.c
 #include <stdio.h>
 
 int main()
@@ -171,20 +171,48 @@ int main()
     printf("size of long = %lu and unsigned long = %lu\n", sizeof(i4), sizeof(i6));
 }
 ```
-# Range of Values of C Data Type
+## Range of Values of C Data Type (*Table data need correction)
 
 |Data Type|Format Specifier|Range|Typical Bit Size|
 |---|---|-----|---|
 | unsigned char | %c | 0 to 255 | 8 |
 |char|%c|-127 to 127|8|
-| int|%d, %i|-32,767 to 32,767|16 or 32|
-| unsigned int|%u| 0 to 65,535|16 or 32|
+| int|%d, %i|-32,767 to 32,767|32|
+| unsigned int|%u| 0 to 65,535|32|
 |short int|%hd|-32,767 to 32,767|16|
 |unsigned short int|%hu|0 to 65,535|16|
-|signed short int|%hd|Same as short int|16|
-|long int|%ld, %li|-2,147,483,647 to 2,147,483,647|32|
-|unsigned long int|%lu|0 to 4,294,967,295|32|
+|long int|%ld, %li|-2,147,483,647 to 2,147,483,647|64|
+|unsigned long int|%lu|0 to 4,294,967,295|64|
 |float|%f|1E-37 to 1E+37 along with six digits of the precisions here|32|
 |double|%lf|1E-37 to 1E+37 along with six digits of the precisions here|64|
 |long double|%Lf|1E-37 to 1E+37 along with six digits of the precisions here|80|
+
+## Memory size units
+
+sizeof returns size value as bytes. 
+
+**Small unit to large unit:**
+bits -> bytes -> kilo bytes -> mega bytes -> giga bytes.
+
+|Small Unit| Big Unit|
+|-|-|
+|8 Bits|-> 1 Byte|
+|1024 Byets|-> 1 KB|
+|1024 KB|-> 1 MB|
+|1020 MB| -> 1 GB|
+
+## How to calculate int/long range based on bit size?
+
+Min value = (-2 ^ (X-1))
+Max value = (2 ^ (X-1) - 1)
+
+Note - ^ is power operator
+
+Consider size of int is 32 bit, so
+Min value = (-2 ^ (32-1)) =  -2147483648
+Max value = (2 ^ (32-1) - 1) = 2147483647
+
+**Please note that, this is not applicable to float/double values. Their range will be calculated using
+IEEE 754 standard**
+
 
