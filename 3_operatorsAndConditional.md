@@ -1,8 +1,8 @@
 # Learn C language : Operators and conditinals
 
-## Mathmatical operator
+## Mathematical operator
 - addition (+)
-- substraction (-)
+- subtraction (-)
 - multiplication (*)
 - division (/)
 - modulus or remainder (%)
@@ -19,7 +19,7 @@ int main()
     printf("10 - 5 = %d\n", 10 - 5);
     printf("10 * 5 = %d\n", 10 * 5);
     printf("10 / 5 = %d\n", 10 / 5);
-    printf("rem of (10 / 5) = %d\n", 10 % 5);
+    printf("rem of (12 / 5) = %d\n", 12 % 5);
 
     int num = 10;
     printf("Before increamentation - num = %d\n", num);
@@ -30,7 +30,7 @@ int main()
 }
 ```
 
-## Conditions and comparision operators
+## Conditions and comparison operators
 
 - Less than operator (<) 
 - Greator than operator (>) : 
@@ -40,7 +40,7 @@ int main()
 - Gretor than or equal to (>=) 
 - Less than or equal to (<=)
 
-```
+``` cond_ifelse.c
 #include <stdio.h>
 
 int main()
@@ -52,5 +52,31 @@ int main()
     } else {
         printf("Please wait for %d years", 18 - age);
     }
+}
+```
+
+``` cond_ifelseif.c
+#include <stdio.h>
+
+int main()
+{
+    int mark_percent = 80;
+    if(mark_percent <= 40) {
+        printf("You failed. You can do it, just put some more effort.");
+    } else if(mark_percent <= 60) {
+        printf("You passed, but a lot scope to improve.");
+    } else if(mark_percent <= 80) {
+        printf("You done well, you can do better than this.");
+    } else {
+        printf("Execelent, keep it up.");
+    }
+}
+```
+``` cond_or_and.c
+#include <stdio.h>
+
+int main()
+{
+
 }
 ```
