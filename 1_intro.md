@@ -2,7 +2,7 @@
 
 ## Hello world
 
-``` c
+``` examples/intro.c
 #include <stdio.h>
 
 int main()
@@ -11,15 +11,14 @@ int main()
 }
 ```
 
-- Description
-    - #include is a directive that includes a header. Header is a file that has declaration 
-        of the functions. In this case we included "stdio.h" header which contains 
-        declaration of "printf".
-    - main is a entry point of program. When program execution requested, OS looks of entry point
-        from where it can start execution. For C program, its main.
-    - main is a special function which acts as a entry point. We will discuss about function in coming sections.
-    - printf is a function which prints requested string/characters to the console.
-    - In this program, it will print "Welcome to C" to the console.
+- #include is a directive that includes a header. Header is a file that has declaration 
+    of the functions. In this case we included "stdio.h" header which contains 
+    declaration of "printf".
+- main is a entry point of program. When program execution requested, OS looks of entry point
+    from where it can start execution. For C program, its main.
+- main is a special function which acts as a entry point. We will discuss about function in coming sections.
+- printf is a function which prints requested string/characters to the console.
+- In this program, it will print "Welcome to C" to the console.
 
 
 ## What is computer language
@@ -74,8 +73,33 @@ This is similar to human languages, their we call these rules as grammer.
 
 In comming sections, we will lean the use of above keywords and rules to use them.
 
+## Now lets compile above program and executed it
 
+Note that many vender provide compiler of C language. But here we are using
+"GNU gcc" and "zig"
 
+- Compile using gcc
+``` sh
+gcc examples/intro.c -o examples/intro
+```
+Above command will compile intro.c program in examples directory and also 
+it will generated intro executable in examples directory. -o indicate output.
+
+- Compile using zig
+``` sh
+zig cc examples/intro.c -o examples/intro
+```
+
+- Execute executable intro (or intro.exe on windows)
+
+``` sh
+./examples/intro
+
+# output
+
+Welcome to C
+
+```
 
 
 
