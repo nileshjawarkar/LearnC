@@ -1,5 +1,6 @@
 # Learn C language : Introduction
 
+Lets start with simple hello-world program.
 ## Hello world
 
 ``` examples/intro.c
@@ -45,7 +46,7 @@ include C. These languages allow humans to write instauctions in human readable 
 instruction are converted to machine code (code that uses computers binary instructions.) using the tools
 provided by that particular language.
 
-In case of C, we call it **compiler**. It is the tool that converts C program to machine code.
+In case of C, the tool that converts C program to machine code is called as **compiler**.
 
 ## Keyword in C
 
@@ -73,10 +74,10 @@ This is similar to human languages, their we call these rules as grammer.
 
 In comming sections, we will lean the use of above keywords and rules to use them.
 
-## Now lets compile above program and executed it
+## Now we had enough discussion to start. Lets compile our hello-world program and executed it
 
 Note that many vender provide compiler of C language. 
-But here we are using following compilers 
+But here we are using following compilers. You can check their details on intenet.
 - "GNU gcc" or 
 - "zig"
 

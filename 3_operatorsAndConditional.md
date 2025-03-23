@@ -6,8 +6,8 @@
 - multiplication (*)
 - division (/)
 - modulus or remainder (%)
-- increment (++)
-- decrement (--)
+- increment (++) : Adds 1 to existing value
+- decrement (--) : Subtract 1 from existing value
 
 
 ``` operators_ex1.c 
@@ -104,6 +104,5 @@ int main()
     } else {
         printf("World open for you, explore it.");
     }
-
 }
 ```
