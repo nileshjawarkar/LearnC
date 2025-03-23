@@ -39,10 +39,40 @@ Assignment operator is used to assign a value to a variable.
 | += | x += 5 | x = x + 5 | Added 5 to a existing value of variable |
 | -= | x -= 5 | x = x - 5 | Subtract 5 from existing value of variable |
 | *= | x *= 5 | x = x * 5 | Multiply existing value by 5 |
-| /= | x /= 5 | x = x / 5 | Devide existing value by 5 |
+| /= | x /= 5 | x = x / 5 | Divide existing value by 5 |
 | %= | x %= 5 | x = x % 5 | Modulus of existing value by 5 |
 
+### Example
+``` c 
+#include <stdio.h>
 
+int main()
+{
+    // Assignment 
+    int x = 10;
+    printf("Initial value of x = %d", x);
+
+    // Increment it by 5
+    x += 5;
+    printf("After adding 5 to x = %d", x);
+
+    // Decrement it by 2
+    x -= 2;
+    printf("After subtracting 2 from x = %d", x);
+
+    // Multiply it by 4
+    x *= 4;
+    printf("After multiplied by 4, x = %d", x);
+
+    // divide it by 2
+    x /= 2;
+    printf("After division by 2, x = %d", x);
+
+    // remainder after dividing by 3
+    x %= 3;
+    printf("Remainder after division by 3, x = %d", x);
+}
+```
 
 ## Conditions and comparison operators
 
@@ -60,8 +90,7 @@ Assignment operator is used to assign a value to a variable.
 int main()
 {
     int age = 18;
-    if( age >= 18) 
-    {
+    if( age >= 18) {
         printf("Your are eligible for votting");
     } else {
         printf("Please wait for %d years", 18 - age);
