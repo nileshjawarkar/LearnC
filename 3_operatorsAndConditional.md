@@ -116,6 +116,39 @@ We have 3 logical operators in the C language:
 | 0 | 1 |
 | 1 | 0 |
 
+### Example of OR operator
+``` c
+#include <stdio.h>
+
+int main()
+{
+    int a = -1, b = 20;
+    if (a > 0 || b > 0) {
+        printf("Any one of the given value is "
+               "greater than 0\n");
+    } else {
+        printf("Both values are less than 0\n");
+    }
+    return 0;
+}
+```
+
+### Example of AND operator
+``` c
+#include <stdio.h>
+
+int main()
+{
+    int a = 10, b = 20;
+    if (a > 0 && b > 0) {
+        printf("Both values are greater than 0\n");
+    } else {
+        printf("Both values are less than 0\n");
+    }
+    return 0;
+}
+```
+### Example of AND operator - 2
 ``` c 
 #include <stdio.h>
 
@@ -128,7 +161,6 @@ int main()
 
     short int eligible_for_engineering = 0;
     short int eligible_for_medical = 0;
-
     if( physics_marks >= 90 && chemestry_marks >= 90 && maths_marks >= 90) {
         eligible_for_engineering = 1;
     }
