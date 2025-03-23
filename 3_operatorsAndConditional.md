@@ -30,15 +30,28 @@ int main()
 }
 ```
 
+## Assignment operators
+Assignment operator is used to assign a value to a variable.
+
+| Operator | Example | Same as | Description |
+|---------|---------|-------|---|
+| = | x = 5 |  | Assign value to a variable |
+| += | x += 5 | x = x + 5 | Added 5 to a existing value of variable |
+| -= | x -= 5 | x = x - 5 | Subtract 5 from existing value of variable |
+| *= | x *= 5 | x = x * 5 | Multiply existing value by 5 |
+| /= | x /= 5 | x = x / 5 | Devide existing value by 5 |
+| %= | x %= 5 | x = x % 5 | Modulus of existing value by 5 |
+
+
+
 ## Conditions and comparison operators
 
 - Less than operator (<) 
-- Greator than operator (>) : 
-- OR operator (||)
-- And operator (&&)
+- Greator than operator (>) 
 - Equality operator (==)
 - Gretor than or equal to (>=) 
 - Less than or equal to (<=)
+- Not-equal to operator (!=)
 
 ### Simple example of if-else
 ``` cond_ifelse.c
@@ -73,8 +86,37 @@ int main()
     }
 }
 ```
-### OR / AND example
-``` cond_or_and.c
+
+## Logical operators
+Logical operators are used to combine multiple conditions/constraints. 
+Logical Operators returns either 0 or 1, it depends on whether the expression result is true or false. 
+
+We have 3 logical operators in the C language:
+- OR Operator (||)
+
+| X | Y | X OR Y |
+|--|--|--|
+| 0 | 0 | 0 |
+| 1 | 0 | 1 |
+| 0 | 1 | 1 |
+| 1 | 1 | 1 |
+
+- And Operator (&&)
+
+| X | Y | X AND Y |
+|--|--|--|
+| 0 | 0 | 0 |
+| 1 | 0 | 0 |
+| 0 | 1 | 0 |
+| 1 | 1 | 1 |
+- Not Operator (!)
+
+| X | NOT X |
+|--|--|
+| 0 | 1 |
+| 1 | 0 |
+
+``` c 
 #include <stdio.h>
 
 int main()
