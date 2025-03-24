@@ -92,24 +92,25 @@ Now lets understand what above program is doing.
         while(stars_on_line > 0) //-- Here
             //-- this condition evaluates to true as stars_on_line = 1 which is 
             //-- greator than 0 and executes the printf("*")
-            //-- which print 1 start for us.
+            //-- which print 1 star for us.
             stars_on_line--; // Next this statement is executed.
             //-- which reduces value of stars_on_line by 1.
             //-- now it becomes 0.
         //-- Now when next iteration inner while executes
         while(stars_on_line > 0) //-- Here
-            //-- stars_on_line = 0, and 0 is not greator then 0.
-            //-- so condition evaluates to false.
+            //-- stars_on_line = 0, and 0 > 0 condition evaluates to false.
             //-- so loop will break.
         //-- now we are outoff inner loop and next following
         //-- statements will get executed.
         printf("\n"); //-- print new-line, which move cursor to start of next line
-        counter++;    //-- Increment counter to 2 (counter = 1 + 2)
-    //-- New next iteration of outtter loop executed.
+        counter++;    //-- Increment counter to 2 (counter = counter + 1)
+    //-- Now next iteration of outtter loop executed.
     while(counter <= max_stars) //-- , here
     //-- Now counter = 2, which is less than max_stars,
-    //-- so condition is true and execution will continue.
+    //-- so condition is eavaluates to true and execution will continue.
+
     //-- This execution of outer loop continues until condition becomes false.
+    //-- and finaly it will print the stars as expected by the program.
         
 ```        
         
