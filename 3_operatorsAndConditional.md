@@ -1,4 +1,4 @@
-# Learn C language : Operators and conditinals
+# Learn C language : Operators and conditional statements 
 
 ## Mathematical operator
 - addition (+)
