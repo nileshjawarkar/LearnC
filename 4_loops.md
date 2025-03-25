@@ -29,8 +29,8 @@ for(int counter = 0; counter < 10; counter++)
     printf("Counter = %d\n", counter);
 }
 ```
-## Do while - varient of while loop
-It is used in the cases, where we want to execute the code at least onces even if loop
+## Do while - variant of while loop
+It is used in the cases, where we want to execute the code at least once even if loop
 condition evaluates to false. For while and for loop, loop condition must be true to execute
 the code block.
 
@@ -49,7 +49,7 @@ Here loop condition evaluates to false and loop breaks.
 ## Code Examples
 
 ### Print following structure of stars (*), using while loop.
-``` txt
+``` 
 *
 **
 ***
@@ -110,7 +110,36 @@ Now lets understand what above program is doing.
     //-- so condition is eavaluates to true and execution will continue.
 
     //-- This execution of outer loop continues until condition becomes false.
-    //-- and finaly it will print the stars as expected by the program.
-        
-```        
-        
+    //-- and finally it will print the stars as expected by the program.
+```
+
+## Exercises
+
+### 1) Write a program to print following struture -
+``` 
+*****
+****
+***
+**
+*
+```
+
+### 2) Write a program to print following struture -
+
+```
+    *
+   **
+  ***
+ ****
+*****
+```
+
+### 3) Write a program to print following struture - 1 star at top and 9 at bottom.
+```
+    *
+   ***
+  *****
+ *******
+*********
+```
+
