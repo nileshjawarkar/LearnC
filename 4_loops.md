@@ -1,4 +1,4 @@
-# Loops
+# Learn C language : Loops
 
 Loop executes block of statements repeatedly until condition is reached.
 
@@ -115,7 +115,7 @@ Now lets understand what above program is doing.
 
 ## Exercises
 
-### 1) Write a program to print following struture -
+### LE1) Write a program to print following struture -
 ``` 
 *****
 ****
@@ -124,7 +124,7 @@ Now lets understand what above program is doing.
 *
 ```
 
-### 2) Write a program to print following struture -
+### LE2) Write a program to print following struture -
 
 ```
     *
@@ -134,7 +134,7 @@ Now lets understand what above program is doing.
 *****
 ```
 
-### 3) Write a program to print following struture - 1 star at top and 9 at bottom.
+### LE3) Write a program to print following struture - 1 star at top and 9 at bottom.
 ```
     *
    ***
