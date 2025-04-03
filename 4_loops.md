@@ -143,3 +143,50 @@ Now lets understand what above program is doing.
 *********
 ```
 
+### LE4) Write a program to print following struture - 9 star at top and 1 at bottom.
+```
+*********
+ *******
+  *****
+   ***
+    *
+```
+### LE5) Write a program to print following struture 
+
+```
+    *
+   ***
+  *****
+ *******
+*********
+*********
+ *******
+  *****
+   ***
+    *
+```
+
+### LE6) Write a program to print following struture 
+
+```
+    *
+   ***
+  *****
+ *******
+*********
+*********
+ *******
+  *****
+   ***
+    *
+    *
+   ***
+  *****
+ *******
+*********
+*********
+ *******
+  *****
+   ***
+    *
+```

@@ -97,3 +97,28 @@ int main()
     return 0;
 }
 ```
+
+### LE4
+``` c 
+#include <stdio.h>
+
+int main()
+{   
+    int stars = 9;
+    int spaces = 0;
+    for(int row = 1; row <= 5; row++) {
+        for(int space = 1; space <= spaces; space++) {
+            printf(" ");
+        }
+
+        for(int star = 1; star <= stars; star++) {
+            printf("*");
+        }
+        //-- Print new-line after each row/line
+        printf("\n");
+        stars -= 2;
+        spaces += 1;
+    }
+    return 0;
+}
+```
