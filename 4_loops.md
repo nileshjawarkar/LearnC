@@ -166,27 +166,5 @@ Now lets understand what above program is doing.
     *
 ```
 
-### LE6) Write a program to print following struture 
+### LE6) Write a program to print above struture 2 times
 
-```
-    *
-   ***
-  *****
- *******
-*********
-*********
- *******
-  *****
-   ***
-    *
-    *
-   ***
-  *****
- *******
-*********
-*********
- *******
-  *****
-   ***
-    *
-```

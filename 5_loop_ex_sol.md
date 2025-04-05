@@ -102,23 +102,35 @@ int main()
 ``` c 
 #include <stdio.h>
 
-int main()
-{   
-    int stars = 9;
-    int spaces = 0;
-    for(int row = 1; row <= 5; row++) {
-        for(int space = 1; space <= spaces; space++) {
-            printf(" ");
-        }
-
-        for(int star = 1; star <= stars; star++) {
-            printf("*");
-        }
-        //-- Print new-line after each row/line
-        printf("\n");
-        stars -= 2;
-        spaces += 1;
+/*-----------------
+*********
+ *******
+  *****
+   ***
+    *
+------------------*/
+int main() {
+  int star_on_row = 9;
+  int space_on_row = 0;
+  int row = 1;
+  while (row <= 5) {
+    int space = 1;
+    while (space <= space_on_row) {
+      printf(" ");
+      space++;
     }
-    return 0;
+
+    int star = 1;
+    while (star <= star_on_row) {
+      printf("*");
+      star++;
+    }
+
+    printf("\n");
+    row++;
+    star_on_row -= 2;
+    space_on_row += 1;
+  }
+  return 0;
 }
 ```
