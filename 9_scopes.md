@@ -51,7 +51,7 @@ Lets discuss, how scope defines avalibility of "***int value***" variable ...
 
    But after definition of ***int value = 5;*** here also this new local variable shadows the local variable 
    defined before it and following statement prints "5".
-   ***printf("At If end => value = %d\n", value);**
+   ***printf("At If end => value = %d\n", value);***
 
 4) In next simple scope block, prints value "11".
    ***printf("At block start => value = %d\n", value);***
