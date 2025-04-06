@@ -41,16 +41,19 @@ Lets discuss, how scope defines avalibility of "***int value***" variable ...
    when executed it prints "55". This because as it has no local declaration, it is able to
    access value variable in global scope.
 2) In the main function, before defining new local variable, following statement prints "55" value of global variable.
+
    ***printf("At main start => value = %d\n", value);***
 
    But after that, ***int value = 11;*** definition of this new local variable shadows the global variable. 
    So it becomes the value variable, whoes value (11) is available to next statement in the current code block.
 
 3) In if block, following statement prints value "11".
+
    ***printf("At If start => value = %d\n", value);***
 
    But after definition of ***int value = 5;*** here also this new local variable shadows the local variable 
    defined before it and following statement prints "5".
+
    ***printf("At If end => value = %d\n", value);***
 
 4) In next simple scope block, prints value "11".
