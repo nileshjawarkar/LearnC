@@ -27,10 +27,10 @@ int add(int num1, int num2) {
 }
 ```
 
-In above example, 
+Above function perform addition of 2 numbers and return the result. 
+Here ..
 - add : Name of function
-- num1 : argument 1 of type int
-- num2 : argument 2 of type int
+- num1 & num2 : Are the arguments of type int. Argument is the information passed to function.
 - return int, addition of num1 and num2
 
 Some times function do not return anything. In such case
@@ -42,7 +42,7 @@ void sayHelloTo(char[] person) {
 }
 ```
 
-## Calling a function
+## Call a function
 
 ``` c 
 #include <stdio.h>
