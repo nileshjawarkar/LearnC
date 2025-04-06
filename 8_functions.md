@@ -4,11 +4,10 @@
 - When calling the function, we can pass data to function known as parameters.
 - Functions allow to define the code once, and use it many times. So it promoted re-usabilty of code.
 
-From of the tutorial, we are using function. Yes I am talkng about
+From start, we are using function. Yes I am talkng about
 *int main()*. Yes it is a function, but it is special function.
 main function work as a entry point of the program we write. Entry point
 from where operating system start executing our program.
-
 
 **Syntax -**
 
@@ -48,6 +47,21 @@ void sayHelloTo(char[] person) {
 ``` c 
 #include <stdio.h>
 
+int add(int num1, int num2) {
+    return (num1 + num2);
+}
+
+void sayHelloTo(char[] name) {
+    printf("Hello %s\n", name);
+}
+
 int main() {
+    int v1 = add(10, 20);
+    int v2 = add(13, 25);
+
+    printf("v1 = %d, v2 = %d\n", v1, v2);
+
+    char person[] = "Mr. Tom";
+    sayHelloTo(person);
 }
 ```
