@@ -32,9 +32,9 @@ int main() {
   printf("At main end => value = %d\n", value);
 }
 ```
+Lets discuss, how scope defines avalibility of "***int value***" variable ...
 
-In above example, int type variable value is declared at
-1) Global scope (1 => value = 55)
+1) At first, "***int value = 55***" defined at global scope (out size any function).
    - This value is available to entire program un-less it shadowed by definition of another
    variable with same name.
    - In the function foo, their no local variable named foo. But still program compiles and
