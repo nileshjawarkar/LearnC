@@ -1,10 +1,3 @@
-# Learn C language : Scopes
-
-In C, variables are only accessible inside the region they are created. This is called scope.
-
-Lets discuss it using example ..
-
-``` c 
 #include <stdio.h>
 int value = 55;
 
@@ -28,17 +21,3 @@ int main() {
   printf("At main end => value = %d\n", value);
   return 0;
 }
-```
-
-Compile and run the above program. It will generate following output -
-``` sh
-At main start => value = 55
-At If start => value = 11
-At block start => value = 5
-At block end => value = 7
-At If end => value = 5
-n side foo => value = 55
-At main end => value = 11
-```
-
-
