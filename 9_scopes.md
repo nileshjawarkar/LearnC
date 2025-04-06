@@ -9,7 +9,7 @@ Lets discuss it using following example -
 int value = 55;
 
 void foo() { 
-    printf("n side foo => value = %d\n", value); 
+    printf("In side foo => value = %d\n", value); 
 }
 
 int main() {
@@ -21,7 +21,7 @@ int main() {
     printf("At If end => value = %d\n", value);
   }
 
-  //-- Just block - Not using any specific statement like if, while, for etc.
+  //-- Just a code block - Not using any specific statement like if, while, for etc.
   {
     printf("At block start => value = %d\n", value);
     int value = 7; //-- 4
@@ -64,6 +64,6 @@ At If start => value = 11
 At If end => value = 5
 At block start => value = 11
 At block end => value = 7
-n side foo => value = 55
+In side foo => value = 55
 At main end => value = 11
 ```
