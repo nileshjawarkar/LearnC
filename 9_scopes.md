@@ -56,8 +56,7 @@ Lets discuss, how scope defines avalibility of "***int value***" variable ...
 
    ***printf("At If end => value = %d\n", value);***
 
-4) In next simple scope block, prints value "11".
-   ***printf("At block start => value = %d\n", value);***
+4) In next simple scope block, it prints "11" and then "7".
 
 **Compile and run the above program. It will generate following output -**
 
