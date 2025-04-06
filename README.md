@@ -10,4 +10,6 @@
 5. [Loops / solutions](./5_loop_ex_sol.md)
 6. [Arrays](./6_Arrays.md)
 7. [Inputs](./7_inputs.md)
+8. [Functions](./8_functions.md)
+9. [Scopes](./9_scopes.md)
 
