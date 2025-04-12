@@ -276,8 +276,13 @@ int main() {
 }
 ```
 
-**Note - Please take a note of break keyword in switch. If we missed it at the end of case block, 
-it will execute all the cases below it, until it find break statement.**
+**Points to note -**
+1) Expresion in "switch(expression)" must be evaluated to int type. So we can use int or char with it.
+2) Each case statement will be checked one after the another - top to down
+3) If match found, statement associated with that case will be executed. If that case block didnt 
+have break statement in it, then all statments under it (including statements of other case block)
+will be executed until break or end of switch is reached.
+
 
 ### Example 2:
 
