@@ -11,7 +11,7 @@
 ## Example
 ``` c 
 // Example of single line comment. Single line comment start with "//" and
-// it will be effective for rest of the line from where it start.
+// it will be effective till end of that line.
 int main() { // Main is a entry point of c program.
 
     /* Example of multi-line comment. 
