@@ -48,8 +48,11 @@ We can read above lines as
 printf("Age = %d, pi = %f, ch = %c\n", age, pi, ch);
 ```
 
-This printf function prints values of the variables to console.
-And it uses format specifier to print those values.
+This printf function prints values of the variables to console and it uses format specifier
+to print those values. Format specifier tells the printf function what type of value it needs 
+to prints. At the end of this section, you can find at table which list data types and corrospondingformat
+format specifiers.
+
 - %d is used to print integer value
 - %f is used to print floating value
 - %c is used to print character value
