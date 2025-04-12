@@ -5,7 +5,7 @@
 - They allow a program to execute different blocks of code based on whether a condition 
 is true or false. So basicaly they controls the flow of execution.
 - Conditions are defined using the Comparison operators.
-- The main conditional statements are if, if-else, else-if, and the switch statement. 
+- The main conditional statements are if, if-else and the switch statement. 
 
 ## Comparison operators
 
@@ -16,7 +16,21 @@ is true or false. So basicaly they controls the flow of execution.
 - Less than or equal to (<=)
 - Not-equal to operator (!=)
 
-### Simple If statement example
+## If-else statement
+
+``` txt
+if (test expression) {
+   // code
+}
+```
+
+If expression inside the parenthesis () evaluates to true,
+then statements inside the body of if are executed.
+If epression is evaluated to false, 
+then statements inside the body of if are **not** executed
+
+
+### Example of if 
 ``` c 
 int main() {
     int num = 11;
@@ -57,7 +71,22 @@ int main() {
 }
 ```
 
-### Simple example of if-else
+## if-else statement
+``` txt
+if (test expression) {
+   // body of if
+} else {
+   // body of else
+}
+```
+
+If expression inside the parenthesis () evaluates to true,
+then statements inside the body of if are executed.
+If epression is evaluated to false, 
+then statements inside else body are executed
+
+
+### Example of if-else
 ``` cond_ifelse.c
 #include <stdio.h>
 int main() {
@@ -73,7 +102,7 @@ int main() {
     }
 }
 ```
-### Nested if-else
+### Example of nested if-else
 ``` cond_ifelseif.c
 #include <stdio.h>
 
@@ -192,6 +221,57 @@ int main()
         printf("Go for medical");
     } else {
         printf("World open for you, explore it.");
+    }
+}
+```
+
+## switch statement
+The switch statement allows us to execute one code block among many alternatives.
+You can do the same thing with the if...else..if ladder. However, the syntax of the 
+switch statement is much easier to read and write.
+
+**Syntax :**
+
+``` txt 
+switch (expression)
+{
+    case constant1:
+      // statements
+      break;
+
+    case constant2:
+      // statements
+      break;
+    .
+    .
+    .
+    default:
+      // default statements
+}
+```
+
+### Example 1:
+``` c 
+int main() {
+    int num = 10;
+    switch(num) {
+        case 5:
+            printf("Number is 5");
+            break;
+        case 10:
+            printf("Number is 10");
+            break;
+        default:
+            printf("This is default case.");
+    }
+
+    //-- This is similar to following if-else block.
+    if(num == 5) {
+        printf("Number is 5");
+    } else if(num == 10) {
+        printf("Number is 10");
+    } else {
+        printf("This is default case.");
     }
 }
 ```
