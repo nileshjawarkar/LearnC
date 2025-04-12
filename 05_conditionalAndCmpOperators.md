@@ -16,7 +16,7 @@ is true or false. So basicaly they controls the flow of execution.
 - Less than or equal to (<=)
 - Not-equal to operator (!=)
 
-## If-else statement
+## If statement
 
 ``` txt
 if (test expression) {
