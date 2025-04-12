@@ -256,13 +256,13 @@ int main() {
     int num = 10;
     switch(num) {
         case 5:
-            printf("Number is 5");
+            printf("Number is 5\n");
             break;
         case 10:
-            printf("Number is 10");
+            printf("Number is 10\n");
             break;
         default:
-            printf("This is default case.");
+            printf("None of above cases executed.\n");
     }
 
     //-- This is similar to following if-else block.
@@ -271,7 +271,35 @@ int main() {
     } else if(num == 10) {
         printf("Number is 10");
     } else {
-        printf("This is default case.");
+        printf("None of above cases executed.\n");
     }
 }
+```
+
+**Note - Please take a note of break keyword in switch. If we missed it at the end of case block, 
+it will execute all the cases below it, until it find break statement.**
+
+### Example 2:
+
+``` c 
+int main() {
+    int num = 5;
+    switch(num) {
+        case 5:
+            printf("Number is 5\n");
+        case 10:
+            printf("Number is 10\n");
+            break;
+        default:
+            printf("None of above cases executed.\n");
+    }
+}
+```
+
+In this example, we did not added break in case "5". So it will output -
+
+``` sh
+# output
+Number is 5
+Number is 10
 ```
