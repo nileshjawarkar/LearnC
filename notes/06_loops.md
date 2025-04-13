@@ -82,9 +82,9 @@ int main()
 }
 ```
 
-Now lets understand what above program is doing.
-![flow char](../images/loop_stars.svg) 
+![flow chart](../images/loop_stars.svg) 
 
+Now lets understand what above program is doing.
 ``` txt
 //-- At start,
     int counter = 1, //-- counter initialized to 1.
