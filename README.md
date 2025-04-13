@@ -1,6 +1,6 @@
 # Learn C language
 
-![c lang](./clang.jpeg) 
+![c lang](./c.svg) 
 
 ## Index
 1. [Introduction](./01_intro.md)
