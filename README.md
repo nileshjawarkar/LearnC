@@ -9,10 +9,11 @@
 4. [Assignment and mathematical operators](./04_assignmentAndMathOperator.md)
 5. [Conditionals and comparision operators](./05_conditionalAndCmpOperators.md)
 6. [Loops](./06_loops.md)
-7. [Loops / solutions](./07_loop_ex_sol.md)
+7. [Exercises - 1](./07_exercise.md)
 8. [Arrays](./08_Arrays.md)
 9. [Inputs](./09_inputs.md)
-10. [Functions](./10_functions.md)
-11. [Scopes](./11_scopes.md)
+10. [Exercises - 2](./10_exercise.md)
+11. [Functions](./11_functions.md)
+12. [Scopes](./12_scopes.md)
 
 

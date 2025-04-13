@@ -1,4 +1,61 @@
-# Learn C language : Loops / example solutions
+# Learn C language : Loops exercises
+
+
+### LE1) Write a program to print following structure -
+``` 
+*****
+****
+***
+**
+*
+```
+
+### LE2) Write a program to print following structure -
+
+```
+    *
+   **
+  ***
+ ****
+*****
+```
+
+### LE3) Write a program to print following structure - 1 star at top and 9 at bottom.
+```
+    *
+   ***
+  *****
+ *******
+*********
+```
+
+### LE4) Write a program to print following structure - 9 star at top and 1 at bottom.
+```
+*********
+ *******
+  *****
+   ***
+    *
+```
+### LE5) Write a program to print following structure 
+
+```
+    *
+   ***
+  *****
+ *******
+*********
+*********
+ *******
+  *****
+   ***
+    *
+```
+
+### LE6) Write a program to print above structure 2 times
+
+## Solutions 
+
 
 ### LE1
 ``` c 
