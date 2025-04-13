@@ -19,6 +19,7 @@
     - and then print it.
 5) Make odd numbers double and print it.
     - Take 10 numbers as input and save it in array.
+    - Print what your entered as input.
     - Check for odd numbers in array, if found any make it double by multiplyng by 2.
     - Print new modified array values.
 
@@ -121,6 +122,7 @@ int main() {
 
 Make odd numbers double and print it.
 - Take 10 numbers as input and save it in array.
+- Print what your entered as input.
 - Check for odd numbers in array, if found any make it double by multiplyng by 2.
 - Print new modified array values.
 

@@ -1,7 +1,7 @@
 # Learn C language : Loops exercises
 
 
-### LE1) Write a program to print following structure -
+1) Write a program to print following structure -
 ``` 
 *****
 ****
@@ -10,7 +10,7 @@
 *
 ```
 
-### LE2) Write a program to print following structure -
+2) Write a program to print following structure -
 
 ```
     *
@@ -20,7 +20,7 @@
 *****
 ```
 
-### LE3) Write a program to print following structure - 1 star at top and 9 at bottom.
+3) Write a program to print following structure - 1 star at top and 9 at bottom.
 ```
     *
    ***
@@ -29,7 +29,7 @@
 *********
 ```
 
-### LE4) Write a program to print following structure - 9 star at top and 1 at bottom.
+4) Write a program to print following structure - 9 star at top and 1 at bottom.
 ```
 *********
  *******
@@ -37,7 +37,7 @@
    ***
     *
 ```
-### LE5) Write a program to print following structure 
+5) Write a program to print following structure 
 
 ```
     *
@@ -52,12 +52,12 @@
     *
 ```
 
-### LE6) Write a program to print above structure 2 times
+6) Write a program to print above structure 2 times
 
 ## Solutions 
 
 
-### LE1
+### Ex1:
 ``` c 
 #include <stdio.h>
 
@@ -82,7 +82,7 @@ int main()
 }
 ```
 
-### LE2
+### Ex2:
 
 ``` c 
 #include <stdio.h>
@@ -122,7 +122,7 @@ int main()
 }
 ```
 
-### LE3
+### Ex3:
 ``` c 
 #include <stdio.h>
 /*---------------------------------------------------------------------------
@@ -155,7 +155,7 @@ int main()
 }
 ```
 
-### LE4
+### Ex4:
 ``` c 
 #include <stdio.h>
 
@@ -192,7 +192,7 @@ int main() {
 }
 ```
 
-### LE4
+### Ex5:
 
 ``` c
 #include <stdio.h>
