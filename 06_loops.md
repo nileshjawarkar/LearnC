@@ -14,9 +14,12 @@ while(counter < 10)
     counter++;
 }
 ```
+
 Above program will executes 10 times and print "Counter = 0 to 9".
 Remember counter start with 0 and end when counter reached to 10. When counter value 
-is 10, it will break the loop.
+is 10, it will break the loop. 
+
+![Loop](./loop.svg) 
 
 ## For loop
 We will do the same thing we done in above program using for loop. For loop provides 
