@@ -41,7 +41,7 @@ int add(int num1, int num2) {
 In example 1, function with name sayHello, takes zero arguments as input and
 returns void. It means nothing. This just prints **Hello sir!** on the terminal.
 
-In example 2, function with name sayHelloTo, takes 1 string/charactor array as argument and
+In example 2, function with name sayHelloTo, takes 1 string/character array as argument and
 returns void/nothing. This function just print **Hello Nilesh\n** as output, if **Nilesh** string 
 given as a input.
 
@@ -84,3 +84,30 @@ Hello sir!
 Hello Mr. Tom
 v1 = 30, v2 = 38
 ```
+
+## Examples
+
+### Calculate cube of a number
+- Here we will use one of the example, we already implemented. But now we will implement it using function.
+- Take a number as input and print its cude, but ..
+    - cube calculation should be done in function "calculate_cube" and 
+    - function should return calculated cube value.
+
+``` c 
+int calculate_cube(int number) {
+    return (number * number * number);
+}
+
+int main() {
+    printf("Enter a number = ");
+    int num = 0;
+    scanf("%d", &num);
+    if (num > 1) {
+        int cube = calculate_cube(num);
+        printf("Cube of number %d is %d.\n", num, cube);
+    } else {
+        printf("Please enter number greator than 1 as input.\n");
+    }
+}
+```
+
