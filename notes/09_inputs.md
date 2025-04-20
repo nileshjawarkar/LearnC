@@ -71,3 +71,33 @@ As we are executing program on terminal, all of these currently points to termin
 While using scanf as well, it is reading from terminal. But in scanf case stdin is default value and not need 
 to be specified.
 
+## fgetc, getchar
+
+fgets is used to read string (list of chars), but what if we want read a single charactor.
+fgetc and getchar are used to read single charactor.
+
+``` c 
+#include <stdio.h>
+
+int main() {
+    char ch = ' ';
+    int result = 0, num = 0;
+    while (ch != 'q') {
+        //-- Ask user to enter a number and read it using scanf.
+        printf("Enter a number to add :");
+        scanf("%d", &num); 
+        //-- added getchar to discard newline char entered to submit a number.
+        getchar();
+        //-- Add number to result
+        result += num;
+        //-- Ask if user want to continue ..
+        printf("Press any key to continue or 'q' to exit : ");
+
+        //-- Here we can use getchar or fgetc. 
+        //-- Difference in then is that fgetc requires a stdin as input.
+        ch = getchar(); //-- ch = fgetc(stdin);
+    }
+    printf("Result = %d\n", result);
+    return 0;
+}
+```
