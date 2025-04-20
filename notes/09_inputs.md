@@ -73,8 +73,7 @@ to be specified.
 
 ## fgetc, getchar
 
-fgets is used to read string (list of chars), but what if we want read a single charactor.
-fgetc and getchar are used to read single charactor.
+fgetc and getchar both of them are used to read single charactor.
 
 ``` c 
 #include <stdio.h>
@@ -92,7 +91,6 @@ int main() {
         result += num;
         //-- Ask if user want to continue ..
         printf("Press any key to continue or 'q' to exit : ");
-
         //-- Here we can use getchar or fgetc. 
         //-- Difference in then is that fgetc requires a stdin as input.
         ch = getchar(); //-- ch = fgetc(stdin);

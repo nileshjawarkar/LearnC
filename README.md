@@ -15,5 +15,6 @@
 10. [Exercises - 2](./notes/10_exercise.md)
 11. [Functions](./notes/11_functions.md)
 12. [Scopes](./notes/12_scopes.md)
+13. [Project 1](./notes/13_project1.md)
 
 
